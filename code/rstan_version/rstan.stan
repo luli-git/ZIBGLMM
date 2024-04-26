@@ -15,9 +15,6 @@ parameters {
 }
 transformed parameters {
   cov_matrix[2] Sigma_nu;
-  //matrix[2,2] inv_Sigma_nu;
-  //Sigma_nu = quad_form_diag(omega_nu, sigma_nu);
-  //inv_Sigma_nu = inverse(Sigma_nu);
 }
 model{
   
