@@ -44,7 +44,7 @@
   - `num_iter = 100000`
   - `thinning = 100`
   - `burnin = 100`
-  - `results_folder = `results_bayesian_bglmm`
+  - `results_folder = "results_bayesian_bglmm"`
 
 ### Bayesian ZIBGLMM stan version 
 - The code for Bayesian BGLMM and ZIBGLMM implemented in Rstan is contained in `ZIBGLMM/code/rstan_version/` folder
