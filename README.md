@@ -1,9 +1,7 @@
 # ZIBGLMM: Zero-Inflated Bivariate Generalized Linear Mixed Model for Meta-Analysis with Double-Zero-Event Studies
 
-## Get started
-
-### Data
-#### Real-world data from CDSR
+## Data
+### Real-world data from CDSR
 - The `CDSR_data.csv` contain the real-world meta-analyses used in the study.
   - `CDSR.id` Unique identifier for the Cochrane Database of Systematic Reviews (CDSR) entry.
   - `ma.id` Unique identifier for the meta-analysis within the CDSR entry.
@@ -17,7 +15,7 @@
   - `total_count` Total number of participants in the study (n1 + n2).
   - `dzs_count` Number of double-zero studies in the meta-analysis (studies where r1 = r2 = 0).
   - `dz_ratio` Ratio of double-zero studies to total studies in the meta-analysis.
-#### Simulated meta-analyses
+### Simulated meta-analyses
 - The `simulation_data.csv` contain the simulated meta-analyses used in the study.
   - `metaanalysisid` Unique identifier for each meta-analysis in the dataset.
   - `site` Identifier for the study site or individual study within the meta-analysis.
@@ -28,9 +26,9 @@
   - `b0`, `b1` fixed effects and represent the average risks in the control and treatment groups in the logit scale
   - `yy` Used for SAS data loading. Please safely ignore it. 
 
-### Run the models
+## Run the models
 
-#### Frequentist BGLMM and ZIBGLMM
+### Frequentist BGLMM and ZIBGLMM
 - The code for frequentist BGLMM and ZIBGLMM is contained in `ZIBGLMM/code/SAS/` folder
 - You can utilize SAS OnDemand for Academics [https://welcome.oda.sas.com/] to run SAS codes.
 - Make sure to upload the `simulation_data.csv` and `CDSR_data.csv` to the server along with the codes, make sure to update the path to the files, `datafile="/home/u63419104/simulations_data.csv" `.
