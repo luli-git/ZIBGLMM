@@ -9,7 +9,7 @@ parameters {
   vector<lower=0>[2] sigma_nu; // control variance
   corr_matrix[2] omega_nu; // correlation matrix for random effects
   vector[2] nu[J];         // control random effects
-  real<lower=0, upper=1> pi;
+  real<lower=0, upper=1> pi; // zero inflation rate
 }
 transformed parameters {
   cov_matrix[2] Sigma_nu;
