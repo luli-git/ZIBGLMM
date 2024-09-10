@@ -4,6 +4,7 @@
 
 # clean environment
 rm(list = ls())
+if (!require(dplyr)) install.packages("dplyr")
 
 setwd(getwd())
 sim.data = read.csv("data/CDSR_data.csv")
