@@ -22,6 +22,6 @@ model{
   for(n in 1:J){
       target += 
       binomial_logit_lpmf(y[n,1] | sample[n,1], mu[1] + nu[n,1]) + 
-      binomial_logit_lpmf(y[n,2] | sample[n,2], mu[2] + nu[n,2]));
+      binomial_logit_lpmf(y[n,2] | sample[n,2], mu[2] + nu[n,2]);
   }
 }
